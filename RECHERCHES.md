@@ -11,12 +11,14 @@
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+**null n'est pas un objet: c'est une valeur primitive qui veut dire "volontairement vide" c'etait logique n'est pas une bug qui s'affiche sur le programme c'est une logique créer par les premiers programmeur qui avaient crée javascript. null était répresenté par un "pointeur null", c'est à dire une valeur faite uiquement de zéro.Du coup. Javascript lisait l'etiquette 0 et en deduisait que null était un objet. C'etait une erreur d'implémentation
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+const ancienneFormation = null;
+console.log(typeof ancienneFormation);
+// Résultat obtenu : object
 ```
 
 **Source :** 
