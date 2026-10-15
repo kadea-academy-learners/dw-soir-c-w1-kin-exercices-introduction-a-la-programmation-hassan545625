@@ -65,19 +65,24 @@ console.log(-7 % 2);   // Résultat obtenu : -1
 
 **Question :** Peut-on enchaîner plusieurs ternaires ? Pourquoi est-ce souvent déconseillé ?
 
-**Ma réponse (avec mes mots, 3 à 5 lignes) :**
+**Ma réponse (avec mes mots, 3 à 5 lignes) :** oui, c'est tout à fait possible en JavaScript. On appelle cela des ternaires imbriqués. par exemple au lieu d'utiliser un grand if/else if/ else, on pourra écrire ton tarif sur une seule ligne comme ceci : 
+const tarif = age < 5 ? '0 FC' : age < 18 ? '500 FC' : '1000 FC';. il est déconseillé pour la lisibilité, la maintenance et les bugs et à la fin le débogage pour n'est pas perdre du temps lorsque un autre developpeur viendra voir ton code.
 
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+const age = 16;
+const status = age >= 18 ? 'majeur' : 'mineur'
+console.log(status);  // Affich 'mineur'
 ```
 
-**Source :** 
+**Source :** L'opérateur conditionnel - JavaScript | MDN
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Conditional_operator
+
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, je l'ai demande qu'est ce que le ternaires et pourquoi est-t-il déconseille.
 
 ## F5 — Ma première fonction fléchée
 
