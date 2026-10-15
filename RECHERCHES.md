@@ -88,19 +88,23 @@ https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Conditi
 
 **Question :** Quand peut-on enlever les parenthèses autour des paramètres, et quand peut-on enlever return et les accolades ?
 
-**Ma réponse (avec mes mots, 3 à 5 lignes) :**
+**Ma réponse (avec mes mots, 3 à 5 lignes) :**Nous pouvons enlever les parenthèses uniquement si la fonction a exactement un seul paramèttre.
+On pourra enlever les accolades et le return uniquement si le corps de la fonction ne contient qu'une seule expression (une seule ligne de code qui produit une valeur). C'est ce qu'on appelleun retour implicite. Conclusion est que une fonction flèche peut etre écrite de facon plus courte. On peut enlevr les parenthèses autour du paramèttre quand il n'y en a qu'un : prenom =>... Elles restent obligatoire avec zéro paramèttre ou avec plusieur: () =>... et (a, b) pour returne on fera (nombre) => nombre * nombre, et la forme avec accolades { return ... } quand la fonction a plusieur ligne
 
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+const carre = (nombre) => { nombre * nombre };
+console.log(carre(7));       // Résultat obtenu : undefined
 ```
 
-**Source :** 
+**Source :** Expressions de fonctions fléchées - JavaScript | MDN
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, j'ai demandé quand on peut enlever les parenthèses et le return, puis verifiésur MDN
 
 ## F6 — Le compte à rebours
 
