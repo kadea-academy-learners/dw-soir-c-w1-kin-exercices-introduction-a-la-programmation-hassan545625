@@ -47,19 +47,19 @@ Number.isNaN().
 
 **Question :** Que renvoie -7 % 2 ? Déduis-en pourquoi il vaut mieux tester % 2 !== 0 plutôt que % 2 === 1 pour détecter un nombre impair.
 
-**Ma réponse (avec mes mots, 3 à 5 lignes) :**
+**Ma réponse (avec mes mots, 3 à 5 lignes) :** -7 % 2 renvoie -1, et non 1. en JavaScript le reste d'une division garde le signe du nombre de départ. comme -7 est négatif et non positive.
 
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+console.log(-7 % 2);   // Résultat obtenu : -1
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, je l'ai demande comment -7 % 2 peut renvoie -1 mais pas 1.
 
 ## F4 — Le contrôleur du bus
 
