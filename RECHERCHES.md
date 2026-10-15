@@ -21,27 +21,27 @@ console.log(typeof ancienneFormation);
 // Résultat obtenu : object
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, j'ai demande pourquoi typeof null renvoie object, puis j'ai vérifié sur MDN
 
 ## F2 — Le convertisseur de saisie
 
 **Question :** Qu'est-ce que NaN, et pourquoi NaN === NaN renvoie false ? Quelle fonction utiliser pour le détecter ?
 
-**Ma réponse (avec mes mots, 3 à 5 lignes) :**
-
-...
+**Ma réponse (avec mes mots, 3 à 5 lignes) :** qu'est ce que NaN veut dire Not a Number: le résultat d'un calcul impossible, comme Number('abc') que je viens d'exécuter. pourquoi NaN === NaN renvoie false par ce que NaN ne représentes pas une valeur précise : il veut dire "le résultat d'un calcul impossible". Deux calculs impossibles différents donc on ne peut pas utiliser === pour le détecter : on utilise 
+Number.isNaN().
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+  console.log(NaN === NaN);                 // Résultat obtenu : false
+  console.log(Number.isNaN(Number('abc')))  // Résultat obtenu : true
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, j'ai demande pourquoi NaN === NaN renvoie false, puis j'ai vérifié sur MDN
 
 ## F3 — Pair ou impair : le tirage des tickets
 
