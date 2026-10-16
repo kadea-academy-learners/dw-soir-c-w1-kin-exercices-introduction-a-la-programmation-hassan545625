@@ -110,19 +110,22 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arro
 
 **Question :** À quoi sert le mot-clé continue ? Quelle différence avec break ?
 
-**Ma réponse (avec mes mots, 3 à 5 lignes) :**
+**Ma réponse (avec mes mots, 3 à 5 lignes) :** continue dit à la boucle: arrete ce tour-ci, et passe directement au tour suivant. Le reste du bloc de la boucle n'est pas exécuté pour ce tour, mais la boucle continue. Dans le programme quand le nombre vaut 5, continue saute le console.log. La boucle passe ensuite à 4, puis continue normalement. Pour break: break arrete toute la boucle immédiatement. plus aucun tour n'est exécuté. Si on remplacait continue par break dans le F6 la boucle s'arreterait à 5, et on n'afficherait ni 4, ni 3, ni 2, ni 1.
 
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+// Test avec continue : 3, puis 1 (le 2 est sauté)
+// Test avec break : 3, seulement (la boucle s'arrete au 2)
 ```
 
-**Source :** 
+**Source :** Continuer - JavaScript | MDN
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue
+
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, je l'ai demandé a quoi sert continue et qu'elle est la difference entre les deux.
 
 ## M1 — FizzBuzz kinois
 
